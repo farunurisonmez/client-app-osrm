@@ -24,6 +24,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_API_KEY }}
-          BRANCH: gh-pages
-          FOLDER: build
-          CLEAN: true
+          branch: gh-pages
+          folder: build
+          ssh-key: ${{ secrets.REACT_APP_API_KEY }}
