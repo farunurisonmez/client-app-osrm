@@ -1,15 +1,15 @@
 import axios, {AxiosResponse} from "axios"
 
-interface Nominatim {
+interface INominatim {
     search:string
 }
 
-interface NominatimService {
-    fetchNominatim(params:Nominatim):Promise<AxiosResponse>;
+interface INominatimService {
+    fetchNominatim(params:INominatim):Promise<AxiosResponse>;
 }
 
-const ApiNominatimService: NominatimService = {
-    fetchNominatim: async (params:Nominatim): Promise<AxiosResponse> => {
+const ApiNominatimService: INominatimService = {
+    fetchNominatim: async (params:INominatim): Promise<AxiosResponse> => {
         const config = {
             params:{
                 q:params.search,
