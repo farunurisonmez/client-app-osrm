@@ -19,10 +19,11 @@ jobs:
         
       - name: Install and Build
         run: npm install && npm run build
-        env:
-          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
+        
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          branch: gh-pages
-          folder: build
+          ACCESS_TOKEN: ${{ secrets.REACT_APP_API_KEY }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
