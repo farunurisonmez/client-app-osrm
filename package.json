@@ -1,7 +1,7 @@
 {
   "name": "client-app-osrm",
   "version": "0.0.1",
-  "homepage": "https://farunurisonmez.github.io/osrm",
+  "homepage": "https://farunurisonmez.github.io/client-app-osrm/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
