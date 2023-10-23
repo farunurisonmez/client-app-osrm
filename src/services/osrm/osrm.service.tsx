@@ -19,7 +19,7 @@ const ApiOSRMService: IOSRMService = {
             }
         }
         try{
-            const response = axios.get(`http://router.project-osrm.org/route/v1/driving/${params.startingCoordinate};${params.endCoordinate}`, config)
+            const response = axios.get(`https://router.project-osrm.org/route/v1/driving/${params.startingCoordinate};${params.endCoordinate}`, config)
             return response
         }
         catch(err){
