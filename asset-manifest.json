@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/client-app-osrm/static/css/main.68e55275.css",
-    "main.js": "/client-app-osrm/static/js/main.f1c8152a.js",
-    "static/js/787.42dac7bc.chunk.js": "/client-app-osrm/static/js/787.42dac7bc.chunk.js",
-    "index.html": "/client-app-osrm/index.html",
-    "main.68e55275.css.map": "/client-app-osrm/static/css/main.68e55275.css.map",
-    "main.f1c8152a.js.map": "/client-app-osrm/static/js/main.f1c8152a.js.map",
-    "787.42dac7bc.chunk.js.map": "/client-app-osrm/static/js/787.42dac7bc.chunk.js.map"
+    "main.css": "/osrm-client-app/static/css/main.68e55275.css",
+    "main.js": "/osrm-client-app/static/js/main.db7423e3.js",
+    "static/js/787.da43fe76.chunk.js": "/osrm-client-app/static/js/787.da43fe76.chunk.js",
+    "index.html": "/osrm-client-app/index.html",
+    "main.68e55275.css.map": "/osrm-client-app/static/css/main.68e55275.css.map",
+    "main.db7423e3.js.map": "/osrm-client-app/static/js/main.db7423e3.js.map",
+    "787.da43fe76.chunk.js.map": "/osrm-client-app/static/js/787.da43fe76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68e55275.css",
-    "static/js/main.f1c8152a.js"
+    "static/js/main.db7423e3.js"
   ]
 }
