@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import OpenStreetMapComponent from './components/map/openStreet.map.component';
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <OpenStreetMapComponent/>
+      <Provider store={store}>
+        <OpenStreetMapComponent/>
+      </Provider>
   );
 }
 
