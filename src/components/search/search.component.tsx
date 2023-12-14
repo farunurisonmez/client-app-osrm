@@ -7,8 +7,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import DirectionsIcon from '@mui/icons-material/Directions';
 import useDebounce from "../../utils/search/debounce";
+import {useAppDispatch} from "../../store";
+
+import {open} from "../../reducers/drawer.slice";
 
 interface ISearch {
+    placeHolder:string
     debounce: (text: string) => void
 }
 
@@ -17,6 +21,8 @@ const SearchComponent = (params:ISearch) => {
     const [searchTxt, setSearchTxt] = useState("")
     params.debounce(useDebounce(searchTxt,1000))
 
+    const dispatch = useAppDispatch();
+
     return (
         <Paper
             component="form"
@@ -24,12 +30,12 @@ const SearchComponent = (params:ISearch) => {
         >
             <InputBase
                 sx={{ ml: 1, flex: 1 }}
-                placeholder="Search"
+                placeholder={params.placeHolder}
                 inputProps={{ 'aria-label': 'search google maps' }}
                 onChange={e => setSearchTxt(e.target.value)}
             />
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-            <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
+            <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions" onClick={()=>dispatch(open())}>
                 <DirectionsIcon/>
             </IconButton>
         </Paper>
